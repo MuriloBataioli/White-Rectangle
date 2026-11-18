@@ -29,7 +29,7 @@ class _Window():
         # Embrulha os controles no SafeArea automaticamente
         page.add(ft.SafeArea(content=ft.Column(controls=self.controles)))
 
-class _Label():
+class _Text():
 
     def __init__(self, name: str, content: str, size: int=16):
         
