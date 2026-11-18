@@ -50,7 +50,8 @@ class _Open:
             
             # Intercepta o evento de fechar a view nativamente pela página
             def view_pop(e):
-                current_page.views.pop()
+                if current_page.views:
+                    current_page.views.pop()
                 current_page.update()
 
             current_page.on_view_pop = view_pop
